@@ -8,5 +8,8 @@ services:
       - no-new-privileges:true
     shm_size: 1g
     stop_grace_period: 60s
+    sysctls:
+      - net.ipv6.conf.all.disable_ipv6=1
+      - net.ipv6.conf.default.disable_ipv6=1
     volumes:
       - /DATA/AppData/openbot/data:/data
