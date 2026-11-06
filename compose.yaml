@@ -13,7 +13,8 @@ services:
       - net.ipv6.conf.default.disable_ipv6=1
     volumes:
       - /DATA/AppData/openbot/data:/data
-      networks:
+
+networks:
   default:
     driver_opts:
-      com.docker.network.driver.mtu: 1300
+      com.docker.network.driver.mtu: "1300"
