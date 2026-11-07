@@ -13,6 +13,7 @@ services:
       - 8.8.8.8
     volumes:
       - /DATA/AppData/openbot/data:/data
+      - /DATA/Vida:/vida
 
 networks:
   default:
