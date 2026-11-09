@@ -1,6 +1,6 @@
 services:
   openbot:
-    image: ghcr.io/nightly-labs/openbot:0.63.0
+    image: ghcr.io/nightly-labs/openbot:0.66.0
     container_name: openbot
     restart: unless-stopped
     security_opt:
